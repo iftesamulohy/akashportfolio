@@ -135,4 +135,5 @@ STATIC_FILES=[
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = BASE_DIR/"uploads"
 MEDIA_URL = "/user-media/"
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE =  'django.contrib.staticfiles.storage.StaticFilesStorage' 
+#STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
