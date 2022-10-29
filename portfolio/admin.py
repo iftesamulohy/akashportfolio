@@ -23,8 +23,9 @@ class WhatIdoAdmin(admin.ModelAdmin):
         kwargs['widgets'] = {'description': forms.Textarea}
         return super().get_form(request, obj, **kwargs)
 class StyleAdmin(admin.ModelAdmin):
-    def has_add_permission(self, request, obj=None):
-        return False
+    pass
+    #def has_add_permission(self, request, obj=None):
+       # return False
 class EducationAdmin(admin.ModelAdmin):
     list_display = ("title","description","institution")
     def get_form(self, request, obj=None, **kwargs):
