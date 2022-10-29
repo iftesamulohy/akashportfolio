@@ -7,6 +7,7 @@ from pyexpat import model
 from unicodedata import category
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django import forms
 
 # Create your models here.
 class UserDetails(models.Model):
