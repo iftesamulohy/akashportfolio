@@ -12,8 +12,8 @@ class UserDetailsAdmin(admin.ModelAdmin):
     def get_form(self, request, obj=None, **kwargs):
         kwargs['widgets'] = {'description': forms.Textarea}
         return super().get_form(request, obj, **kwargs)
-    def has_add_permission(self, request, obj=None):
-        return False
+    #def has_add_permission(self, request, obj=None):
+        #return False
 class SkillsTypeAdmin(admin.ModelAdmin):
     def has_add_permission(self, request, obj=None):
         return False
